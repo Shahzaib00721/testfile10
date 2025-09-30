@@ -7,18 +7,18 @@ import Navbar from "./components/Navbar";
 
 
 export default function Home() {
-  return (
+  return (   
     <>
    <div>
      <Navbar/>
    </div>
-    <div className="flex min-h-screen bg-white">
+    <div className="flex min-h-screen    bg-white">
      
       {/* Sidebar */}
       <Slider/>
 
       {/* Main Content */}
-      <main className="flex-1 p-4 md:pl-15 space-y-4">
+      <main className="flex-1 p-4 md:pl-15 space-y-3">
         <h1 className="text-2xl text-black text-center font-bold my-7">Main Dashboard</h1>
 
         <div className="grid md:grid-cols-3 gap-4">

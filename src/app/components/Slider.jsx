@@ -20,9 +20,9 @@ export default function Sidebar() {
   ];
 
   return (
-    <aside className=" bg-[#4A7D9E] text-white font-normal w-60 min-h-screen py-4 hidden md:block">
+    <aside className=" bg-[#4A7D9E] text-white font-normal w-60 min-h-screen py-5 hidden md:block">
       
-      <nav className="space-y-3">
+      <nav className="space-y-4">
         {menu.map((item, i) => (
           <div
             key={i}
