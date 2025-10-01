@@ -26,7 +26,7 @@ export default function Sidebar() {
         {menu.map((item, i) => (
           <div
             key={i}
-            className={`p-3  cursor-pointer ${
+            className={`p-4  cursor-pointer ${
               item.active ? "bg-yellow-400  text-black font-semibold" : "hover:bg-yellow-400"
             }`}
           >

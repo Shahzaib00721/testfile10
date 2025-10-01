@@ -23,7 +23,7 @@ export default function QuickActions() {
             className="flex flex-col  items-center justify-center p-2 border rounded-md shadow-lg hover:bg-gray-50 cursor-pointer"
           >
             {action.icon}
-            <span className="text-md mt-2 text-black font-normal text-center">{action.label}</span>
+            <span className="text-md mt-3 text-black font-normal text-center">{action.label}</span>
           </div>
         ))}
       </div>
