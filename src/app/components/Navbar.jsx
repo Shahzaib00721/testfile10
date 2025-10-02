@@ -11,8 +11,8 @@ export default function Navbar() {
         <Image
           src="/img1.svg" 
           alt="pics"
-          width={35}
-          height={35}
+          width={45}
+          height={40}
         />
       </div>
 
@@ -33,15 +33,15 @@ export default function Navbar() {
       {/* Right: Icons */}
       <div className="flex items-center  gap-4">
         <button className=" hidden md:flex items-center gap-2 bg-[rgba(145,177,197,1)] w-full md:w-30 text-sm px-3 py-1 text-gray-500 rounded-md">
-            <span className="text-lg">📝</span>
+            <span className="text-lg"> <img src="/emoji.svg" alt="" /></span>
 
           Feedback
         </button>
-        <Bell className="text-white w-6 h-6 cursor-pointer" />
-        <Folder className="text-white w-6 h-6 cursor-pointer" />
-        <Star className="text-white w-6 h-6 cursor-pointer" />
-        <div className="w-8 h-8 rounded-full bg-white flex items-center justify-center text-xs font-bold">
-          QS
+        <img src="/bell.svg" className="text-white w-6 h-6 cursor-pointer" />
+        <img src="/folder.svg" className="text-white w-6 h-6 cursor-pointer" />
+        <img src="/star.svg" className="text-white w-6 h-6 cursor-pointer" />
+        <div className="w-8 h-8 rounded-full bg-white text-gray-500 flex items-center justify-center text-xs font-bold">
+          OS
         </div>
       </div>
     </header>

@@ -50,8 +50,8 @@ export default function InsightsCard() {
         {/* Right Icon */}
         <div className="flex justify-center md:justify-end md:pr-15">
           <div className="bg-sky-100 p-4 rounded-lg">
-            <CalendarIcon className="w-10 h-10 text-sky-500" />
-            <div className="absolute text-sky-500 text-xl -mt-7 ml-2">❤️</div>
+            <img src="/calander.svg" className="w-10 h-10 text-sky-500" />
+            <div className="absolute text-sky-500 text-xl -mt-7 ml-2"></div>
           </div>
         </div>
       </div>

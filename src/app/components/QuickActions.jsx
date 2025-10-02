@@ -3,16 +3,16 @@ import { PlusCircle, FileText, CheckSquare, Send, Calendar, Upload, Users, Video
 
 export default function QuickActions() {
   const actions = [
-    { icon: <PlusCircle className="w-8 h-8 text-teal-500" />, label: "Add <Code>" },
-    { icon: <FileText className="w-8 h-8 text-red-400" />, label: "Add Note" },
-    { icon: <CheckSquare className="w-8 h-8 text-blue-400" />, label: "Add Task" },
-    { icon: <Send className="w-8 h-8 text-pink-400" />, label: "Send Forms" },
-    { icon: <Calendar className="w-8 h-8 text-blue-500" />, label: "Add Appointment" },
-    { icon: <Upload className="w-8 h-8 text-sky-500" />, label: "Upload File" },
-    { icon: <Users className="w-8 h-8 text-purple-500" />, label: "Add Staff" },
-    { icon: <Video className="w-8 h-8 text-cyan-600" />, label: "Start Video Call" },
+    { icon: <img src="/plus.svg" className="w-8 h-10 text-teal-500" />, label: "Add <Code>" },
+    { icon: <img src="/note.svg" className="w-8 h-8 text-red-400" />, label: "Add Note" },
+    { icon: <img src="/task.svg" className="w-8 h-8 text-blue-400" />, label: "Add Task" },
+    { icon: <img src="/send.svg" className="w-8 h-8 text-pink-400" />, label: "Send Forms" },
+    { icon: <img src="/add.svg" className="w-8 h-8 text-blue-500" />, label: "Add Appointment" },
+    { icon: <img src="/uplode.svg" className="w-8 h-8 text-sky-500" />, label: "Upload File" },
+    { icon: <img src="/staff.svg" className="w-8 h-8 text-purple-500" />, label: "Add Staff" },
+    { icon: <img src="/video call.svg" className="w-8 h-8 text-cyan-600" />, label: "Start Video Call" },
   ];
-
+  
   return (
     <div className="bg-white shadow rounded-lg p-4  md:h-100 ">
       <h2 className="text-lg text-black  mb-15 ">Quick Actions</h2>
