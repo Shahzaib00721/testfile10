@@ -3,7 +3,7 @@ import { CalendarIcon } from "@heroicons/react/24/outline";
 
 export default function InsightsCard() {
   return (
-    <div className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden max-w-5xl mx-auto my-6">
+    <div className="bg-white rounded-lg shadow-lg border border-gray-200 overflow-hidden max-w-5xl mx-auto my-6">
       {/* Header */}
       <div className="bg-gray-50 px-4 py-2 border-b border-gray-200">
         <h2 className="text-gray-800 font-semibold text-sm md:text-base">
