@@ -21,7 +21,7 @@ export default function Home() {
       <main className="flex-1 p-4 md:pl-15 space-y-3">
         <h1 className="text-2xl text-black text-center font-bold my-7">Main Dashboard</h1>
 
-        <div className="grid md:grid-cols-3 gap-4">
+        <div className="grid md:grid-cols-3 gap-10">
           <Dashboard />
           <div className="md:col-span-2">
             <QuickActions />

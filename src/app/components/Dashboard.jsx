@@ -4,7 +4,7 @@ export default function Dashboard() {
     <div className="flex items-center justify-center  ">
       {/* outer container center کرے گا */}
 
-      <div className="bg-gray-50 shadow rounded-lg h-auto w-full max-w-md md:h-100 ">
+      <div className="bg-white-50 shadow rounded-lg h-auto w-full max-w-md md:h-100 ">
         <h2 className="text-lg mb-6 text-black leading-[20px] pl-4 mt-6">
           Hello, Alberta
         </h2>
@@ -26,7 +26,9 @@ export default function Dashboard() {
           alt=""
           className="bg-fixed bg-cover bg-center w-full rounded-b-lg"
         />
+           <p className="text-end pr-4 pb-2">Mark all Done </p>
       </div>
+   
     </div>
   );
-}
+} 
