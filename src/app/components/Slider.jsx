@@ -41,7 +41,7 @@ export default function Sidebar() {
 
       {/* 🔹 Sidebar */}
       <aside
-        className={`absolute top-12 left-0 h-full w-60 bg-[rgba(74,125,158,0.95)] text-[rgba(255,255,255,0.95)] font-normal transform transition-transform duration-300 ease-in-out z-[999]
+        className={`absolute top-12 left-0 h-260 w-60 bg-[rgba(74,125,158,0.95)] text-[rgba(255,255,255,0.95)] font-normal transform transition-transform duration-300 ease-in-out z-[999]
         ${sidebarOpen ? "translate-x-0" : "-translate-x-full"}
         md:translate-x-0 md:static md:block`}
       >
