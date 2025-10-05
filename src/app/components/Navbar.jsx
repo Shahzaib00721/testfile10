@@ -1,11 +1,10 @@
-// src/app/components/Navbar.tsx
 "use client";
 import { Bell, Star, Folder } from "lucide-react";
 import Image from "next/image";
 import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 export default function Navbar() {
-  return (
-    <header className="w-full bg-[#4A7D9E] flex items-center justify-between px-4 py-2">
+return (
+  <header className="w-full bg-[#4A7D9E] flex items-center justify-between px-4  py-2">
       {/* Left: Logo */}
       <div className="flex items-center gap-2">
         <Image
@@ -17,7 +16,7 @@ export default function Navbar() {
       </div>
 
       {/* Center: Search Bar */}
-  <div className="flex-1 bg-[#4A7D9E] max-w-xl mx-4 hidden md:flex pl-5">
+  <div className="flex-1 bg-[#4A7D9E] max-w-3xl mx-4 hidden md:flex pl-6  ">
   <div className="relative w-80">
     {/* Search Icon inside input (left side) */}
     <MagnifyingGlassIcon className="h-5 w-5 text-[rgba(145,177,197,1)] absolute left-3 top-1/2 -translate-y-1/2" />
@@ -26,7 +25,7 @@ export default function Navbar() {
       type="text"
       placeholder="Search <<code+s>>, programs, forms, etc."
       className="w-full pl-10 pr-4 py-1 bg-[rgba(236,240,240,1)] text-[rgba(145,177,197,1)] rounded-md text-sm outline-none border border-gray-400"
-    />
+      />
   </div>
 </div>
 
