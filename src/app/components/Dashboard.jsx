@@ -1,10 +1,9 @@
 "use client";
+
 export default function Dashboard() {
   return (
-    <div className="flex items-center justify-center  ">
-      {/* outer container center کرے گا */}
-
-      <div className="bg-white-50 shadow-lg border-1 border-gray-200 rounded-lg h-auto w-full max-w-md md:h-100 ">
+    <div className="flex items-center justify-center">
+      <div className="bg-white shadow-lg border border-gray-200 rounded-lg h-auto w-full max-w-md md:h-100 relative">
         <h2 className="text-lg mb-6 text-black leading-[20px] pl-4 mt-6">
           Hello, Alberta
         </h2>
@@ -26,9 +25,12 @@ export default function Dashboard() {
           alt=""
           className="bg-fixed bg-cover bg-center w-full rounded-b-lg"
         />
-           <p className="text-end pr-4 pb-2">Mark all Done </p>
+
+        {/* ✅ Mark all Done bottom-right */}
+        <div className="absolute bottom-2 right-4">
+          <p className="text-gray-300 text-sm md:text-sm">Mark all Done</p>
+        </div>
       </div>
-   
     </div>
   );
-} 
+}
