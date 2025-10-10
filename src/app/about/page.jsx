@@ -7,14 +7,14 @@ export default function ProfilePage() {
   return (
     <div className="min-h-screen bg-gray-100">
       {/* Header */}
-      <div className="bg-white border-b sticky top-0 z-10">
+      <div className="bg-white  sticky top-0 z-10">
           <h1 className="text-3xl font-bold text-center pt-7 text-gray-800">My Profile</h1>
         <div className="max-w-7xl mx-auto px-4 pb-4 flex items-center justify-end">
           <div className="flex items-center space-x-2">
             <button className="p-2 hover:bg-gray-100 rounded-full">
               <img src="vector.svg" alt="" />
             </button>
-            <button className="p-2 hover:bg-gray-100 rounded-full">
+            <button className="p-2 hover:bg-gray-101 rounded-full">
               <svg className="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
               </svg>
@@ -48,7 +48,7 @@ export default function ProfilePage() {
                 </button>
               </div>
 
-              {/* Info Section */}
+             
               <div className="px-6 pb-6 space-y-4 border-t pt-4">
                 <div className="flex justify-between items-start">
                   <span className="text-gray-600 text-sm">Role</span>
@@ -64,8 +64,8 @@ export default function ProfilePage() {
                   </div>
                 </div>
                 <div className="flex justify-between items-start">
-                  <span className="text-gray-600 text-sm">Location</span>
-                  <div className="flex items-center gap-2">
+                  <span className="text-gray-600 text-sm">Location </span>
+                  <div className="flex items-center gap-3">
                     <span className="font-sm text-gray-900">Salem</span>
                     <svg className="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={5} d="M19 9l-7 7-7-7" />
@@ -75,7 +75,7 @@ export default function ProfilePage() {
               </div>
             </div>
 
-            {/* Assigned Code+s */}
+       
             <div className="bg-white rounded-lg">
               <button className="w-full px-4 py-3 bg-[#5B8CA8] text-white font-medium rounded-t-lg flex items-center justify-between">
                 <span>Assigned &lt;Code+s&gt;</span>

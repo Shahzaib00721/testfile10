@@ -1,12 +1,6 @@
-"use client";
-import React from 'react';
-
-
-
-
 export default function LoginPage() {
   return (
-    <div className="max-w-md mx-auto mt-10">
+    <div className="max-w-md mx-auto mt-20">
       <div className="bg-white rounded-lg shadow-lg p-8">
         <h1 className="text-3xl font-bold text-center mb-2">My Profile</h1>
         <p className="text-center text-gray-600 mb-8">Welcome to your profile page!</p>
