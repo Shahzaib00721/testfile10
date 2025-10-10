@@ -1,22 +1,27 @@
 "use client";
+import Link from "next/link";
+
+
+
 import {
   Settings,
   ChevronDown,
   ChevronRight,
   Menu,
   X,
+  
 } from "lucide-react";
 import { useState } from "react";
 
 export default function Sidebar() {
   const [showSettings, setShowSettings] = useState(false);
   const [sidebarOpen, setSidebarOpen] = useState(false);
-
-  const menu = [
+const menu = [
     { name: "Admin View" },
     { name: "Main Dashboard", active: true },
-    { name: "<Ccode+s>" },
-    { name: "My Website" },
+    { name: "<Ccode+s>",link: "/about" },
+    { name: "Profile", link: "/" }, 
+    { name: "My Website", link: "/login" },
     { name: "Forms" },
     { name: "Calendar" },
     { name: "Reporting" },
@@ -31,6 +36,7 @@ export default function Sidebar() {
 
   return (
     <>
+    
       {/* 🔹 Fixed Menu/Cross Icon (always on top, doesn't scroll) */}
       <button
         onClick={() => setSidebarOpen(!sidebarOpen)}
@@ -38,13 +44,14 @@ export default function Sidebar() {
       >
         {sidebarOpen ? <X size={26} /> : <Menu size={26} />}
       </button>
-
+      
       {/* 🔹 Sidebar */}
       <aside
-        className={`absolute top-12 left-0 h-260 w-60 bg-[rgba(74,125,158,0.95)] text-[rgba(255,255,255,0.95)] font-normal transform transition-transform duration-300 ease-in-out z-[999]
+        className={`absolute top-12 left-0 h-280 w-60 bg-[rgba(74,125,158,0.95)] text-[rgba(255,255,255,0.95)] font-normal transform transition-transform duration-300 ease-in-out z-[999]
         ${sidebarOpen ? "translate-x-0" : "-translate-x-full"}
         md:translate-x-0 md:static md:block`}
       >
+       
         <nav className="space-y-4 mt-12">
           {menu.map((item, i) => (
             <div key={i}>
@@ -59,7 +66,7 @@ export default function Sidebar() {
                 }`}
               >
                 <span>{item.name}</span>
-
+             
                 {item.name === "Admin View" && (
                   <>
                     {showSettings ? (

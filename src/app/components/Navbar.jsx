@@ -2,6 +2,8 @@
 import { Bell, Star, Folder } from "lucide-react";
 import Image from "next/image";
 import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
+import Link from "next/link";
+
 export default function Navbar() {
 return (
   <header className="w-full bg-[#4A7D9E] flex items-center justify-between px-4  py-2">
@@ -34,14 +36,21 @@ return (
         <button className=" hidden md:flex items-center gap-2 bg-[rgba(145,177,197,1)] w-full md:w-30 text-sm px-3 py-1 text-gray-500 rounded-md">
             <span className="text-lg"> <img src="/emoji.svg" alt="" /></span>
 
-          Feedback
+           Feedback
         </button>
         <img src="/bell.svg" className="text-white w-6 h-6 cursor-pointer" />
         <img src="/folder.svg" className="text-white w-6 h-6 cursor-pointer" />
+        <Link href="/about">
         <img src="/star.svg" className="text-white w-6 h-6 cursor-pointer" />
+        </Link>
+      
         <div className="w-8 h-8 rounded-full bg-white text-gray-500 flex items-center justify-center text-xs font-bold">
-          OS
+            <Link href="/login">OS
+          
+          </Link>
+
         </div>
+       
       </div>
     </header>
   );
