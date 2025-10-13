@@ -7,7 +7,7 @@ import "./globals.css";
 
 export default function Home() {
   return (
-    <div>
+    <div className="p-4 md:p-6 lg:p-8">
       <h1 className="text-2xl font-bold text-center my-5">Main Dashboard</h1>
 
       <div className="grid md:grid-cols-3 gap-5">
