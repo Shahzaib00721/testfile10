@@ -2,6 +2,7 @@
 import Dashboard from "./components/Dashboard";
 import QuickActions from "./components/QuickActions";
 import Insights from "./components/Insights";
+import "./globals.css";
 
 
 export default function Home() {
