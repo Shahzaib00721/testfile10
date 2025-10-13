@@ -9,9 +9,9 @@ export default function ProfilePage() {
       {/* Header */}
       <div className="bg-white  sticky top-0 z-10">
           <h1 className="text-3xl font-bold text-center pt-7 text-gray-800">My Profile</h1>
-        <div className="max-w-7xl mx-auto px-4 pb-4 flex items-center justify-end">
+        <div className="max-w-7xl mx-auto px-4 pb-5 flex items-center justify-end">
           <div className="flex items-center space-x-2">
-            <button className="p-2 hover:bg-gray-100 rounded-full">
+            <button className="p-3 hover:bg-gray-100 rounded-full">
               <img src="vector.svg" alt="" />
             </button>
             <button className="p-2 hover:bg-gray-101 rounded-full">
